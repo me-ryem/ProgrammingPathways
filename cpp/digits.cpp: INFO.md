@@ -2,7 +2,7 @@
 The program takes a number from the user as input, and displays the sum of its digits
 
 ## Solution
-This could be done in a bunch of different ways. Taking input in an `int` variable seems to be the first thought that comes to mind, but if the input happens to be an int, we'll have to perform mathematical operations on it to get the indiividual digits.
+This could be done in a bunch of different ways. Taking input in an `int` variable seems to be the first thought that comes to mind, but if the input happens to be an int, we'll have to perform mathematical operations on it to get the individual digits.
 I would've gone with this approach if there was a maximum limit to how many digit-long the input should be, but since it wasn't the case, the best idea to me was to take input in a string.
 Now, the usual input-check `if(!cin)` couldn't be used here since a string can contain literally any character. The immediate solution was to check the string character by character, and exit with an error as soon as a non-numeric character is encountered.
 Since a string is basically an array of characters, we could simply iterate over each element of the array and check if it's a digit or not. 
