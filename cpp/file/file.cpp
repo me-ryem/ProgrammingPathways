@@ -8,11 +8,11 @@ int main()
 {
     // for writing
     ofstream myOutput; // creating an object for the file to be written to
-    myOutput.open("C:/Users/marya/3D Objects/Programming/Files/sample-copied.txt"); 
+    myOutput.open("path/to/file/filename.txt"); 
 
     // for reading
     ifstream myInput; // creating an object for the file to be read
-    myInput.open("C:/Users/marya/3D Objects/Programming/Files/sample-to-be-copied.txt");
+    myInput.open("path/to/file/filename.txt");
 
     if (myInput && myOutput)
     {
